@@ -1,4 +1,0 @@
-FROM openjdk:15
-ADD target/shop-dockerfile.jar shop.jar
-EXPOSE 8081
-ENTRYPOINT ["java", "-jar", "/shop.jar"]
