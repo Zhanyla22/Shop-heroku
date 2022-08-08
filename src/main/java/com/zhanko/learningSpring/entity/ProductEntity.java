@@ -9,27 +9,20 @@ import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Data //get set
+@Data
 
 @Entity
-@Table(name = "customer")
-public class CustomerEntity {
-
+@Table(name = "product")
+public class ProductEntity {
 
     @Id
-    @Column(name = "c_id")
+    @Column(name = "p_id")
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private Integer cId;
+    private Integer pId;
     @Column(name = "name")
     private String name;
-    @Column(name = "last_name")
-    private String lastName;
-    @Column(name = "age")
-    private Integer age;
-    @Column(name = "city")
-    private String city;
-
-
-
+    @Column(name="brand_name")
+    private String brandName;
+    @Column(name="cost")
+    private Integer cost;
 }
-

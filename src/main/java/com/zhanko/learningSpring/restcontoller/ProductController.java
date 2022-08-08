@@ -1,2 +1,4 @@
-package com.zhanko.learningSpring.restcontoller;public class ProductController {
+package com.zhanko.learningSpring.restcontoller;
+
+public class ProductController {
 }

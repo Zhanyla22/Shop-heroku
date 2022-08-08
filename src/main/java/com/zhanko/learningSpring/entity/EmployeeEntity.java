@@ -12,7 +12,7 @@ import javax.persistence.*;
 //entity class
 @Entity
 @Table(name="employee")
-public class Employee {
+public class EmployeeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "emp_id")

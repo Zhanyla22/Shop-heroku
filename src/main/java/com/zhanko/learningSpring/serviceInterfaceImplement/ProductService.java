@@ -1,2 +1,4 @@
-package com.zhanko.learningSpring.serviceInterfaceImplement;public class ProductService {
+package com.zhanko.learningSpring.serviceInterfaceImplement;
+
+public class ProductService {
 }

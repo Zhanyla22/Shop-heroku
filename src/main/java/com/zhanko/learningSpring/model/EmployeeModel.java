@@ -1,2 +1,17 @@
-package com.zhanko.learningSpring.Model;public class EmployeeModel {
+package com.zhanko.learningSpring.model;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@NoArgsConstructor
+@AllArgsConstructor
+@Data
+public class EmployeeModel {
+    private Integer empId;
+    private String name;
+    private String lastName;
+    private int salary;
+    private int workExperienceYear;
+    private String department;
 }

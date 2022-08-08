@@ -1,5 +1,6 @@
-package com.zhanko.learningSpring.enums;
+package com.zhanko.learningSpring.entity;
 
+import com.zhanko.learningSpring.entity.Permission;
 import org.springframework.security.core.authority.SimpleGrantedAuthority;
 
 import java.util.Set;

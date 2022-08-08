@@ -1,4 +1,4 @@
-package com.zhanko.learningSpring.contoller;
+package com.zhanko.learningSpring.restcontoller;
 
 import com.zhanko.learningSpring.entity.EmployeeEntity;
 import com.zhanko.learningSpring.model.EmployeeModel;
@@ -10,7 +10,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/employee")
@@ -19,7 +18,7 @@ public class EmployeeController {
     EmployeeServiceImplement employeeService;
 
     @GetMapping("/getEmployee/{empId}")
-    public ResponseEntity<EmployeeModel> getEmployeeById(@RequestParam Integer empId) throws Exception{
+    public ResponseEntity<EmployeeModel> getEmployeeById(@PathVariable Integer empId) throws Exception{
         return employeeService.getEmployeeById(empId);
     }
 
@@ -40,7 +39,6 @@ public class EmployeeController {
             return employeeService.updateEmployeeById(empId,employeeModel);
 
     }
-
 
 
     @DeleteMapping("/deleteEmployee/{empId}")

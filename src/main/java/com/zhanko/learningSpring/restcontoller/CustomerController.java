@@ -1,4 +1,4 @@
-package com.zhanko.learningSpring.contoller;
+package com.zhanko.learningSpring.restcontoller;
 
 
 import com.zhanko.learningSpring.entity.CustomerEntity;
@@ -9,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
-import java.util.Optional;
 
 @RestController
 @RequestMapping("/customer")
@@ -20,14 +19,13 @@ public class CustomerController {
 
     @GetMapping("/getCustomer/{cId}")
     @PreAuthorize("hasAuthority('can:read')")
-    public ResponseEntity<CustomerModel> getCustomerById(@RequestParam Integer cId)throws Exception{  //написать эксепшн
+    public ResponseEntity<CustomerModel> getCustomerById(@PathVariable Integer cId)throws Exception{  //написать эксепшн
         return customerService.getCustomerById(cId);
     }
 
     @GetMapping("/getAllCustomer")
     @PreAuthorize("hasAuthority('can:read')")
     public List<CustomerEntity> getAllEmployee(){
-
         return customerService.getAllCustomer();
     }
 

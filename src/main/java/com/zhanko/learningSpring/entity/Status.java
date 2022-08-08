@@ -1,4 +1,4 @@
-package com.zhanko.learningSpring.enums;
+package com.zhanko.learningSpring.entity;
 
 public enum Status {
     ACTIVE,

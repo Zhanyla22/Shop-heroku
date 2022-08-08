@@ -1,4 +1,4 @@
-package com.zhanko.learningSpring.enums;
+package com.zhanko.learningSpring.entity;
 
 public enum Permission {
     CAN_READ("can:read"),
